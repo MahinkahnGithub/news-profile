@@ -9,8 +9,85 @@ body {
 }
 
 
-.row>* {
-    padding-right: calc(var(--bs-gutter-x) * .7);
-    padding-left: calc(var(--bs-gutter-x) * 0.7);
-    margin-top: var(--bs-gutter-y);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global section css start */
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* header section css start */
+.logo {
+    padding: 5px;
+    background-color: #5D5FEF;
+    color: white;
+    border-radius: 5px;
+}
+
+.news {
+    color: #5D5FEF;
+    font-weight: 600;
+}
+
+hr {
+    border: 2px solid gray;
+}
+
+.profile-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* category section css start */
+.category-item {
+    color: gray;
+    font-weight: 600;
+    background-color: rgb(229, 235, 245);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.category-item:focus {
+    color: white;
+    background-color: #5D5FEF;
+}
+
+.author-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.card {
+    border: none;
+}
+
+.eye-icon {
+    padding-right: 10px;
+}
+
+/* media query start */
+@media only screen and (max-width: 688px) {
+    .category-bar li {
+        margin-bottom: 15px;
+    }
 }

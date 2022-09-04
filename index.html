@@ -42,50 +42,55 @@
 
         <!-- Home btn  -->
         <section>
-            <div class="container mt-5">
-                <div class="row row-cols-auto">
-                    <div class="col"><button type="button" class="btn btn-outline-primary">Home</button></div>
-                    <div class="col"><button type="button" class="btn btn-outline-primary">Breaking news</button></div>
-                    <div class="col"><button type="button" class="btn btn-outline-primary">Regular news</button></div>
-                    <div class="col"><button type="button" class="btn btn-outline-primary">International news</button>
-                    </div>
-                    <div class="col"><button type="button" class="btn btn-outline-primary">Sports</button></div>
-                    <div class="col"><button type="button" class="btn btn-outline-primary">Entertainment</button></div>
-                    <div class="col"><button type="button" class="btn btn-outline-primary">Culture</button></div>
-                    <div class="col"><button type="button" class="btn btn-outline-primary">Arts</button></div>
-                    <div class="col"><button type="button" class="btn btn-outline-primary">All news</button></div>
-                </div>
+            <div class="cateroty-section py-4">
+                <ul id="all-menu" class="d-flex category-bar justify-content-between flex-wrap">
+
+                </ul>
             </div>
         </section>
         <!-- Home btn end -->
 
         <!-- items Entertainment -->
-        <section class="mt-5">
-            <div class="shadow-md p-3 mb-5 bg-body rounded">4 items found for category Entertainment</div>
+        <section id="items-found">
+
         </section>
         <!-- items Entertainment end -->
+        <section class="text-center">
+            <div class="spinner-border" role="status" id="spinner">
+
+            </div>
+        </section>
     </header>
 
     <main>
-        <section>
-            <div id="phone-container" class="card mb-3 container" style="max-width: 69%;">
-                <div class="row g-0">
-                    <div class="col-md-2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ6ex4ODodouayUQVXtaRVYpAZyz4phTe1_A&usqp=CAU"
-                            class="img-hi" alt="...">
+        <section class="container">
+            <div class="blog-card-section">
+                <div class="card mb-3" id="card-display">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="data-not-found">
+
+        </section>
+
+
+        <!-- Modal section start-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Blog Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="col-md-10">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+                    <div class="modal-body" id="modal-body">
+
                     </div>
                 </div>
             </div>
-
-        </section>
+        </div>
+        <!-- Modal section end-->
     </main>
 </body>
 <!-- js file -->
